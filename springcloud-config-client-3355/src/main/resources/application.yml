@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: client-client-3355
+server:
+  port: 3355
