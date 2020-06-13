@@ -1,0 +1,33 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: springcloud-zuul
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka,http://localhost:7002/eureka,http://localhost:7001/eureka
+  instance:
+    instance-id: springcloud-zuul-9527
+    prefer-ip-address: true
+info:
+  app.name: oldwang
+  company.name: bigdata
+
+
+ribbon:
+  eureka:
+    enabled: true
+zuul:
+  routes:
+    olawang:
+      path: /db/**
+      serviceId: springcloud-provider-dept
+    oldheng:
+      path: /py/**
+      serviceId: springcloud-consumer-dept
+  ignored-services: "*"
+
+
+
+
