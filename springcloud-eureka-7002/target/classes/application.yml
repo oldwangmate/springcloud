@@ -1,0 +1,14 @@
+server:
+  port: 7002
+
+spring:
+  application:
+    name: springcloud-eureka
+eureka:
+  instance:
+    hostname: eureka2  #eureka服务端的实例名称
+  client:
+    register-with-eureka: false  # 表示是否向eureka注册中心注册自己
+    fetch-registry: false  # 如果false 则表示自己为注册中心
+    service-url: #监控页面
+      defaultZone:  http://eureka1/eureka,http://eureka3:7003/eureka

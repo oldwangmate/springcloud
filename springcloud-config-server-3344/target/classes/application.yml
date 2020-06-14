@@ -1,0 +1,10 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: springcloud-configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/oldwangmate/springcloud-config.git

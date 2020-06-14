@@ -7,6 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springcloud-api" />
+        <module name="springcloud-config-client-3355" />
+        <module name="springcloud-config-dept-8001" />
+        <module name="springcloud-config-eureka-7001" />
+        <module name="springcloud-config-server-3344" />
         <module name="springcloud-consumer-dept-80" />
         <module name="springcloud-consumer-dept-feign" />
         <module name="springcloud-consumer-dept-hystrix-dashoard" />
@@ -21,6 +25,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
+      <module name="springcloud-config-8001" target="1.8" />
       <module name="springcloud-consumer-fegin" target="1.8" />
       <module name="springcloud-consumer-feign" target="1.8" />
     </bytecodeTargetLevel>
